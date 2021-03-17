@@ -1,10 +1,7 @@
 glob
 shutil
-numpy 
 cv2
 os
-keras
-tensorflow
 json
 PIL
 math
@@ -17,3 +14,9 @@ functools
 gc
 collections
 itertools
+gunicorn==19.9.0
+Keras==2.2.4
+tensorflow==1.12.0
+numpy==1.15.4
+Flask==1.0.2
+Pillow==3.0.0
