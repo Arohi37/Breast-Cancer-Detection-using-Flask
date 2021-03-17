@@ -1,4 +1,3 @@
-glob
 shutil
 cv2
 os
