@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Breast Tumour Detection App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+<body>
+    <section class="header">
+        <h2>Breast tumour classification using Deep Learning</h2>
+    </section>
+
+    <section class="content">
+        <div class="text_content">
+            <p>
+                The model has a sensitivity of 87.9% and a specificity of 89.86%.
+                
+            </p>
+            <p>
+                The histopathology image dataset was taken from <a target="_blank" href="https://www.kaggle.com/paultimothymooney/breast-histopathology-images">Kaggle</a> for this project.
+            </p>
+            <input type="file" id="image" accept="image/*">
+        </div>
+        <div class="image_content">
+            <img src="" alt="" id="imageContainer" />
+        </div>
+        <div class="class_content">
+            <img src="{{ url_for('static', filename='loading.gif') }}" alt="" id="loadingGif">
+            <p id="imageClass">
+            </p>
+            <p id="imageConfidence">
+            </p>
+        </div>
+    </section>
+    
+</body>
+</html>
